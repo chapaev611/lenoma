@@ -1,0 +1,142 @@
+/*=============================================
+=         H e l p e r   c l a s s e s         =
+=============================================*/
+
+
+// Floats
+
+.h-clear {
+    @include clearfix;
+}
+
+// Margins
+
+.h-m0 { margin: 0 !important; }
+.h-mt0 { margin-top: 0 !important; }
+.h-mb0 { margin-bottom: 0 !important; }
+
+.h-m10 { margin: 10px 0; }
+.h-mt10 { margin-top: 10px; }
+.h-mb10 { margin-bottom: 10px; }
+
+.h-m20 { margin: 20px 0; }
+.h-mt20 { margin-top: 20px; }
+.h-mb20 { margin-bottom: 20px; }
+
+.h-m30 { margin: 30px 0; }
+.h-mt30 { margin-top: 30px; }
+.h-mb30 { margin-bottom: 30px; }
+
+
+// Hidden
+//--------------------------------------
+.h-hide {
+    display:none!important;
+}
+
+.h-show {
+    display:block;
+
+    &__inline {
+        display:inline!important;
+    }
+
+    &__inline-block {
+        display:inline-block!important;
+    }
+}
+
+// Adaptiv Helpers
+//--------------------------------------
+.h-mobile-hide {
+    display: block;
+
+    &--inline {
+        display: inline;
+    }
+
+    &--inline-block {
+        display: inline-block;
+    }
+
+    @include mq(767px) {
+        display: none;
+    }
+}
+.h-mobile-show {
+    display: none;
+
+    @include mq(767px) {
+        display: block;
+
+        &--inline {
+            display: inline;
+        }
+
+        &--inline-block {
+            display: inline-block;
+        }
+    }
+}
+
+.h-tablet-hide {
+    display: block;
+
+    &--inline {
+        display: inline;
+    }
+
+    &--inline-block {
+        display: inline-block;
+    }
+
+    @include mq(1023px) {
+        display: none;
+    }
+}
+.h-tablet-show {
+    display: none;
+
+    @include mq(1023px) {
+        display: block;
+
+        &--inline {
+            display: inline;
+        }
+
+        &--inline-block {
+            display: inline-block;
+        }
+    }
+}
+
+.h-desktop-hide {
+    display: block;
+
+    &--inline {
+        display: inline;
+    }
+
+    &--inline-block {
+        display: inline-block;
+    }
+
+    @include mq(1239px) {
+        display: none;
+    }
+}
+.h-desktop-show {
+    display: none;
+
+    @include mq(1239px) {
+        display: block;
+
+        &--inline {
+            display: inline;
+        }
+
+        &--inline-block {
+            display: inline-block;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+<div class="slider-hits js-slider-hits">
+    <div class="title-block">
+        <div class="container">
+            <h2 class="title-block__title">{{slider-hits.title}}</h2>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="slider-hits__slider js-slider">
+            {{#each slider-hits.slides}}
+                <a href="{{link}}" class="slider-hits__slide js-slide">
+                    {{#if isSale}}
+                        <div class="slider-hits__sale">sale</div>
+                    {{/if}}
+                    <div class="slider-hits__img-container">
+                        <img src="{{img}}" alt="" class="slider-hits__img">
+                    </div>
+                    <div class="slider-hits__content js-slider-content">
+                        <h3 class="slider-hits__title js-slider-title">{{title}}</h3>
+                        <p class="slider-hits__brand">{{brand}}</p>
+                        <p class="slider-hits__type">{{type}}</p>
+                        <p class="slider-hits__whom">{{whom}}</p>
+
+                        <div class="slider-hits__prices">
+                            {{#if isSale}}
+                                <span class="slider-hits__old-price">{{oldPrice}}</span>
+                            {{/if}}
+                            <span class="slider-hits__new-price">{{newPrice}}</span>
+                        </div>
+                    </div>
+                </a>
+            {{/each}}
+        </div>
+    </div>
+</div>

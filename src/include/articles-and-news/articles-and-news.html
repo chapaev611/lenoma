@@ -1,0 +1,44 @@
+<div class="articles-and-news">
+    <div class="container bg-linear">
+        <div class="title-block">
+            <h2 class="title-block__title">{{articles-and-news.title}}</h2>
+        </div>
+        
+        <div class="articles-and-news__articles articles">
+            {{#each articles-and-news.articles-list}}
+                <a href="{{href}}" class="articles__block">
+                    {{#each article}}
+                        <h3 class="articles__title">{{this.title}}</h3>
+                        <p class="articles__date">{{this.date}}</p>
+                        <p class="articles__desc">{{this.desc}}</p>
+                    {{/each}}
+                </a>
+            {{/each}}
+    
+            <div class="articles__btn-container">
+                <a href="#" class="articles__btn link">Смотреть все статьи</a>
+            </div>
+        </div>
+    
+        <div class="articles-and-news__news news">
+            {{#each articles-and-news.news-list}}
+                <a href="{{href}}" class="news__block">
+                    {{#each news}}
+                        <div class="news__container-img">
+                            <img src="{{this.img}}" alt="" class="news__img">
+                        </div>
+                        <div class="news__content">
+                            <h3 class="news__title">{{this.title}}</h3>
+                            <p class="news__date">{{this.date}}</p>
+                            <p class="news__desc">{{this.desc}}</p>
+                        </div>
+                    {{/each}}
+                </a>
+            {{/each}}
+    
+            <div class="news__btn-container">
+                <a href="#" class="news__btn link">Смотреть все статьи</a>
+            </div>
+        </div>
+    </div>
+</div>

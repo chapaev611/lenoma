@@ -1,0 +1,38 @@
+<div class="top-brands js-top-brands">
+    <div class="title-block">
+        <div class="container">
+            <h2 class="title-block__title">{{top-brands.title}}</h2>
+        </div>
+    </div>
+
+    <div class="container">
+        <p><a href="javascript:;" class="top-brands__btn link js-btn" data-open="все бренды" data-close="свернуть">все бренды</a></p>
+        <div class="top-brands__preview">
+            {{#each top-brands.visibilityPreview}}
+                <div class="top-brands__container-img">
+                    <img src="{{this}}" alt="" class="top-brands__img">
+                </div> 
+            {{/each}} 
+
+            <div class="top-brands__hidden-preview js-hidden-preview">
+                {{#each top-brands.hiddenPreview}}
+                    <div class="top-brands__container-img">
+                        <img src="{{this}}" alt="" class="top-brands__img">
+                    </div> 
+                {{/each}}   
+            </div>
+        </div>
+
+        <div class="top-brands__slider js-slider">
+            {{#each top-brands.slides}}
+                <div class="top-brands__slide">
+                    <ul class="top-brands__list">
+                        {{#each slide}}
+                            <li class="top-brands__item"><a href="{{this.href}}" class="top-brands__link">{{this.name}}</a></li>
+                        {{/each}}
+                    </ul>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</div>

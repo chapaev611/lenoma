@@ -1,0 +1,275 @@
+/*=============================================
+=                   F o n t s                 =
+=============================================*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+@include fontface(Circle, Circe-Regular, 400);
+@include fontface(Circle, Circe-Bold, 700);
+
+html {
+    display: block !important;
+    background: #fff;
+    font-size: 16px;
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+
+    &.mobile-overflow {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        //overflow: hidden;
+    }
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+
+    font-family: $Roboto;
+
+    &.mobile-overflow {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        overflow-y: scroll;
+    }
+
+    &.is-grid::after {
+        content:'';
+        position:absolute;
+        z-index:1000;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        opacity:0.15;
+        background-image: repeating-linear-gradient(90deg, transparent 0px, transparent 8.333333%, #00f 8.333333%, #00f 16.666666%);
+        pointer-events:none;
+
+        @include mq(767px) {
+            background-image: repeating-linear-gradient(90deg, transparent 0px, transparent 16.666666%, #00f 16.666666%, #00f 33.333333%);
+        }
+    }
+}
+
+main {
+    position:relative;
+    left:0;
+    overflow:hidden;
+    transition: left 0.25s $easeInQuart;
+
+    @include mq(768, 9999) {
+        &.is-shift {
+            left:-8.33%;
+            transition: left 0.75s $easeOutQuart;
+        }
+    }
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0;
+    padding-left: 0;
+    width: 100%;
+
+    @include mq(1300px, 9999) {
+        max-width: 1300px;
+    }
+
+    @include mq(1280px) {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    
+    @include mq(767px) {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+.container-fluid {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0;
+    padding-left: 0;
+
+    @include mq(1440px, 9999) {
+        max-width: 1440px;
+    }
+
+    @include mq(1280px) {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    @include mq(767px) {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+.wrapper {
+    padding: 0 7%;
+
+    @include mq(1023) {
+        padding: 0 4%;
+    }
+}
+
+a {
+    font-family: $font_circle;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.33px;
+    text-decoration: none;
+    color: $color_black;
+    transition: color .35s ease-in-out;
+
+    &:hover {
+        color: $color_brown;
+    }
+}
+
+.link {
+    position: relative;
+    cursor: pointer;
+
+    &:hover {
+        &:before {
+            opacity: 1;
+            width: 100%;
+            left: 0;
+        }
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        width: 5%;
+        height: 1px;
+        border-bottom: 1px solid $color_black;
+        transition: all .35s ease-in-out;
+        opacity: 0;
+    }
+}
+
+input, select, button {
+    -webkit-appearance: none;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.dont-show-me {
+    height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+}
+
+.svg-animation-path {
+    path {
+        transition: stroke-dashoffset 1s $easeInOutCirc;
+    }
+}
+
+.error-message {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    font-size:fontSize(21);
+
+    @include mq(1599) {
+        font-size: 16px;
+    }
+
+    @include mq(1279) {
+        font-size: 12px;
+    }
+
+    .is-error {
+        text-align:right;
+        color: color('$color_red');
+    }
+}
+
+button {
+	-webkit-appearance: none;
+	border-radius: 0;
+}
+
+.svg-whatsapp {
+    fill: #65bc54;
+    width: 26px;
+    height: 26px;
+}
+
+.svg-viber {
+    fill: #8456a5;
+    width: 19px;
+    height: 20px;
+}
+
+.svg-callback {
+    fill: #c1a067;
+    width: 9px;
+    height: 11px;
+}
+
+.svg-message {
+    fill:none;
+    stroke:#c1a067;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2px;
+    width: 14px;
+    height: 11px;
+}
+
+.svg-skype {
+    fill: #c1a067;
+    width: 8px;
+    height: 10px;
+}
+
+.svg-insta {
+    width: 26px;
+    height: 26px;
+    
+    .cls-1 {
+        fill:none;
+    }
+    .cls-2 {
+        fill:url(#gradient_3);
+    }
+    .cls-3 {
+        fill:url(#gradient_3-3);
+    }
+}
+
+.svg-lamp {
+    fill: #c1a067;
+    width: 15px;
+    height: 20px;
+}
+
+.svg-schedule {
+    fill: #c1a067;
+    width: 14px;
+    height: 14px;
+}

@@ -1,0 +1,38 @@
+.steps {
+    padding: 62px 0 0;
+
+    &__list {
+        font-size: 0;
+        text-align: center;
+    }
+
+    &__item {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        width: 25%;
+        padding: 0 0 0 110px;
+        margin: 0 0 30px;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 8px;
+            left: 0;
+            width: 80px;
+            height: 1px;
+            background: $color_gray;
+        }
+    }
+
+    &__desc {
+        max-width: 195px;
+        font-family: $font_circle;
+        font-size: 14px;
+        font-weight: 400;
+        font-variant: small-caps;
+        letter-spacing: 1.4px;
+        text-align: left;
+        color: $color_black;
+    }
+}

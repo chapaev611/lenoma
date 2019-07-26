@@ -1,0 +1,35 @@
+<div class="slider-special-offer js-slider-special-offer">
+    <div class="title-block">
+        <div class="container">
+            <h2 class="title-block__title">{{slider-special-offer.title}}</h2>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="slider-special-offer__slider js-slider">
+            {{#each slider-special-offer.slides}}
+                <a href="{{link}}" class="slider-special-offer__slide js-slide">
+                    {{#if isSale}}
+                        <div class="slider-special-offer__sale">sale</div>
+                    {{/if}}
+                    <div class="slider-special-offer__img-container">
+                        <img src="{{img}}" alt="" class="slider-special-offer__img">
+                    </div>
+                    <div class="slider-special-offer__content js-slider-content">
+                        <h3 class="slider-special-offer__title js-slider-title">{{title}}</h3>
+                        <p class="slider-special-offer__brand">{{brand}}</p>
+                        <p class="slider-special-offer__type">{{type}}</p>
+                        <p class="slider-special-offer__whom">{{whom}}</p>
+
+                        <div class="slider-special-offer__prices">
+                            {{#if isSale}}
+                                <span class="slider-special-offer__old-price">{{oldPrice}}</span>
+                            {{/if}}
+                            <span class="slider-special-offer__new-price">{{newPrice}}</span>
+                        </div>
+                    </div>
+                </a>
+            {{/each}}
+        </div>
+    </div>
+</div>

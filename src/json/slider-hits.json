@@ -1,0 +1,71 @@
+{
+    "title": "хиты продаж",
+    "slides": [
+        {
+            "isSale": true,
+            "link": "#",
+            "img": "./assets/img/slider2/1.png",
+            "title": "Fleur Narcotique",
+            "brand": "EX Nihilo",
+            "type": "Парфюмированная вода",
+            "whom": "Женская",
+            "oldPrice": "8 990 Р.",
+            "newPrice": "от 4 990 Р. —"
+        },
+        {
+            "isSale": false,
+            "link": "#",
+            "img": "./assets/img/slider2/2.png",
+            "title": "100% Love",
+            "brand": "EX Nihilo",
+            "type": "Парфюмированная вода",
+            "whom": "Женская",
+            "oldPrice": "",
+            "newPrice": "от 2 390 Р. —"
+        },
+        {
+            "isSale": false,
+            "link": "#",
+            "img": "./assets/img/slider2/3.png",
+            "title": "10 Corso Como",
+            "brand": "EX Nihilo",
+            "type": "Парфюмированная вода",
+            "whom": "Женская",
+            "oldPrice": "",
+            "newPrice": "от 7 890Р. —"
+        },
+        {
+            "isSale": false,
+            "link": "#",
+            "img": "./assets/img/slider2/4.png",
+            "title": "1881 Collection",
+            "brand": "EX Nihilo",
+            "type": "Парфюмированная вода",
+            "whom": "Женская",
+            "oldPrice": "",
+            "newPrice": "от 3 270 Р. —"
+        },
+        {
+            "isSale": true,
+            "link": "#",
+            "img": "./assets/img/slider2/2.png",
+            "title": "1881 Collection",
+            "brand": "EX Nihilo",
+            "type": "Парфюмированная вода",
+            "whom": "Женская",
+            "oldPrice": "8 990 Р.",
+            "newPrice": "от 3 270 Р. —"
+        },
+        {
+            "isSale": false,
+            "link": "#",
+            "img": "./assets/img/slider2/3.png",
+            "title": "1881 Collection",
+            "brand": "EX Nihilo",
+            "type": "Парфюмированная вода",
+            "whom": "Женская",
+            "oldPrice": "",
+            "newPrice": "от 3 270 Р. —"
+        }
+    ]
+}

@@ -1,0 +1,193 @@
+{
+    "title": "топ брендов",
+    "visibilityPreview": [
+        "./assets/img/brands/1.png",
+        "./assets/img/brands/2.png",
+        "./assets/img/brands/3.png",
+        "./assets/img/brands/4.png",
+        "./assets/img/brands/5.png",
+        "./assets/img/brands/6.png"
+    ],
+    "hiddenPreview": [
+        "./assets/img/brands/1.png",
+        "./assets/img/brands/2.png",
+        "./assets/img/brands/3.png",
+        "./assets/img/brands/4.png",
+        "./assets/img/brands/5.png",
+        "./assets/img/brands/6.png"
+    ],
+    "slides": [
+        {
+            "slide": [
+                {
+                    "href": "#",
+                    "name": "Azzaro"
+                },
+                {
+                    "href": "#",
+                    "name": "Burberry"
+                },
+                {
+                    "href": "#",
+                    "name": "Bvlgari"
+                },
+                {
+                    "href": "#",
+                    "name": "Calvin Klein"
+                },
+                {
+                    "href": "#",
+                    "name": "Carolina Herrera"
+                },
+                {
+                    "href": "#",
+                    "name": "Cartier"
+                }
+            ]
+        },
+        {
+            "slide": [
+                {
+                    "href": "#",
+                    "name": "Christian Dior"
+                },
+                {
+                    "href": "#",
+                    "name": "Dana"
+                },
+                {
+                    "href": "#",
+                    "name": "Davidoff"
+                },
+                {
+                    "href": "#",
+                    "name": "Dolce & Gabbana"
+                },
+                {
+                    "href": "#",
+                    "name": "Elizabeth Arden"
+                },
+                {
+                    "href": "#",
+                    "name": "Estee Lauder"
+                }
+            ]
+        },
+        {
+            "slide": [
+                {
+                    "href": "#",
+                    "name": "Giorgio Armani"
+                },
+                {
+                    "href": "#",
+                    "name": "Givenchy"
+                },
+                {
+                    "href": "#",
+                    "name": "Gucci"
+                },
+                {
+                    "href": "#",
+                    "name": "Guerlain"
+                },
+                {
+                    "href": "#",
+                    "name": "Hugo Boss"
+                },
+                {
+                    "href": "#",
+                    "name": "Issey Miyake"
+                }
+            ]
+        },
+        {
+            "slide": [
+                {
+                    "href": "#",
+                    "name": "Ivanka Trump"
+                },
+                {
+                    "href": "#",
+                    "name": "Jean Paul Gaultier"
+                },
+                {
+                    "href": "#",
+                    "name": "Juicy Couture"
+                },
+                {
+                    "href": "#",
+                    "name": "Lancome"
+                },
+                {
+                    "href": "#",
+                    "name": "Liz Claiborne"
+                },
+                {
+                    "href": "#",
+                    "name": "Mont Blanc"
+                }
+            ]
+        },
+        {
+            "slide": [
+                {
+                    "href": "#",
+                    "name": "Paco Rabanne"
+                },
+                {
+                    "href": "#",
+                    "name": "Parfums De Coeur"
+                },
+                {
+                    "href": "#",
+                    "name": "Ralph Lauren"
+                },
+                {
+                    "href": "#",
+                    "name": "Thierry Mugler"
+                },
+                {
+                    "href": "#",
+                    "name": "Versace"
+                },
+                {
+                    "href": "#",
+                    "name": "Yves Saint Laurent"
+                }
+            ]
+        },
+        {
+            "slide": [
+                {
+                    "href": "#",
+                    "name": "Giorgio Armani"
+                },
+                {
+                    "href": "#",
+                    "name": "Givenchy"
+                },
+                {
+                    "href": "#",
+                    "name": "Gucci"
+                },
+                {
+                    "href": "#",
+                    "name": "Guerlain"
+                },
+                {
+                    "href": "#",
+                    "name": "Hugo Boss"
+                },
+                {
+                    "href": "#",
+                    "name": "Issey Miyake"
+                }
+            ]
+        }
+    ]
+}
+
+
+
+

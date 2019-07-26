@@ -1,0 +1,230 @@
+.footer {
+    padding: 71px 0 0;
+    font-family: $font_circle;
+    font-size: 0;
+    background: $color_black;
+
+    &__block {
+        display: inline-block;
+        vertical-align: top;
+        width: 25%;
+        margin: 0 0 56px;
+        padding: 0 50px 0 0;
+
+        &:nth-of-type(3) {
+            .footer__title {
+                margin-bottom: 26px;
+            }
+        }
+
+        &:nth-last-of-type(1) {
+            .footer__title {
+                margin-bottom: 12px;
+            }
+        }
+
+        &:last-child {
+            padding-right: 13px;
+        }
+    }
+
+    &__title {
+        margin: 0 0 31px;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.2;
+        font-variant: small-caps;
+        letter-spacing: 1.8px;
+        color: $color_white;
+    }
+
+    &__list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__item {
+        margin: 0 0 12px;
+    }
+
+    &__link {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1;
+        letter-spacing: 0.35px;
+        color: $color_gray4;
+    }
+
+    &__text {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1;
+        letter-spacing: 0.35px;
+        color: $color_gray4;
+    }
+
+    &__social {
+        margin: 0 0 9px;
+
+        .footer__text {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 19px 0 0;
+            padding: 5px 0 0;
+        }
+    }
+
+    &__social-links {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    &__social-link {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 16px 0 0;
+        transition: opacity .35s ease-in-out;
+
+        &:hover {
+            opacity: .7;
+        }
+    }
+
+    &__contacts {
+        padding: 27px 0 0;
+    }
+
+    &__contact {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 0 5px;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 24px;
+        font-variant: small-caps;
+        letter-spacing: 1.4px;
+        color: $color_white;
+
+        svg {
+            position: relative;
+            top: 2px;
+            left: 0;
+        }
+
+        span {
+            &:first-child {
+                width: 14px;
+                display: inline-block;
+                margin: 0 11px 0 0;
+                text-align: center;
+            }
+        }
+    }
+
+    .form {
+        margin: 0 0 53px;
+        text-align: right;
+
+        &__input {
+            width: 100%;
+            height: 50px;
+            margin: 0 0 20px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            font-variant: small-caps;
+            letter-spacing: 1.4px;
+            border: none;
+            outline: 0;
+            border-bottom: 2px solid $color_brown;
+            color: $color_white;
+            background: transparent;
+
+            &::placeholder {
+                color: $color_gray4;
+            }
+        }
+
+        &__btn {
+            padding: 0;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 24px;
+            font-variant: small-caps;
+            letter-spacing: 1.4px;
+            color: $color_brown;
+            background: transparent;
+            border: none;
+        }
+    }
+
+    &__join {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 24px;
+        font-variant: small-caps;
+        letter-spacing: 1.4px;
+        color: $color_white;
+
+        &:hover {
+            span:first-child {
+                animation: animation-rotate .35s ease-in-out;
+            }
+        }
+
+        span:first-child {
+            display: inline-block;
+            vertical-align: middle;
+            width: 48px;
+            height: 48px;
+            margin: 0 18px 0 0;
+            border-radius: 50%;
+            box-shadow: 0 14px 46px rgba(51, 80, 64, 0.1);
+            text-align: center;
+            background: $color_white;
+            transition: all .35s ease-in-out;
+        }
+
+        svg {
+            margin-top: calc((48px - 26px) / 2);
+        }
+
+        @keyframes animation-rotate {
+            0% {
+                transform: rotate(360deg);
+            }
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+    }
+
+    &__creators {
+        padding: 45px 0 52px;
+        font-size: 0;
+        border-top: 1px solid $color_gray5;
+
+        .footer__text {
+            display: inline-block;
+            vertical-align: top;
+            margin: 0 28px 0 0;
+
+            &:last-child {    
+                position: relative;  
+                float: right;
+                padding: 0 0 0 32px;
+
+                svg {
+                    position: absolute;
+                    top: -2px;
+                    left: 0;
+                }
+            }
+        }
+    }
+    
+    .link:before {
+        border-color: $color_brown;
+    }
+}

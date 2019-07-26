@@ -1,0 +1,33 @@
+{
+    "slides": [
+        {
+            "img": "./assets/img/slider1/1.png",
+            "title": "идеальный аромат от giorgio armani",
+            "link": "#"
+        },
+        {
+            "img": "./assets/img/slider1/1.png",
+            "title": "отличный аромат от giorgio armani",
+            "link": "#"
+        },
+        {
+            "img": "./assets/img/slider1/1.png",
+            "title": "суперский аромат от giorgio armani",
+            "link": "#"
+        }
+    ],
+    "recommendation-block": [
+        {
+            "linkName": "Интересные предложения",
+            "href": "#"
+        },
+        {
+            "linkName": "Женская парфюмерия",
+            "href": "#"
+        },
+        {
+            "linkName": "Товар со скидками",
+            "href": "#"
+        }
+    ]
+}

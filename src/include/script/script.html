@@ -1,0 +1,67 @@
+<script>
+    setTimeout(function () {
+        var cont = document.getElementsByTagName('head')[0];
+
+        (function () {
+            var s = document.createElement('link');
+            s.rel = 'stylesheet';
+            s.href = 'css/main.css';
+            s.media = 'only x';
+
+            cont.appendChild(s);
+
+            setTimeout(function () {
+                s.media = 'all';
+            }, 0);
+        })();
+
+        var jss = [
+            {
+                src: 'js/libs.js',
+                async: true,
+                defer: true
+            },
+            {
+                src: 'js/main.js',
+                async: true,
+                defer: true
+            },
+            //{
+            //    src: 'https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyC2STNEfHDkiQaGMI5G7hhPtSdPUBghyzQ',
+            //    onLoad: function () {
+            //        setTimeout(function () {
+            //            $(window).trigger('google:map:ready');
+            //        }, 500);
+            //    }
+            //}
+        ];
+        var loadScript = function (i) {
+            i = i || 0;
+
+            if (jss[i]) {
+                var j = document.createElement('script');
+                j.src = jss[i].src;
+                j.async = jss[i].async || false;
+                j.defer = jss[i].defer || false;
+
+                if (typeof jss[i].attributes === 'object') {
+                    for (var attr in jss[i].attributes) {
+                        if (jss[i].attributes.hasOwnProperty(attr)) {
+                            j.setAttribute(attr, jss[i].attributes[attr]);
+                        }
+                    }
+                }
+
+                cont.appendChild(j);
+
+                j.onload = function () {
+                    if (jss[i].hasOwnProperty('onLoad')) jss[i].onLoad();
+
+                    loadScript(i + 1);
+                };
+            }
+        };
+
+        loadScript();
+    }, 10);
+</script>

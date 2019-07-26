@@ -1,0 +1,35 @@
+<div class="slider-novelties js-slider-novelties">
+    <div class="title-block">
+        <div class="container">
+            <h2 class="title-block__title">{{slider-novelties.title}}</h2>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="slider-novelties__slider js-slider">
+            {{#each slider-novelties.slides}}
+                <a href="{{link}}" class="slider-novelties__slide js-slide">
+                    {{#if isSale}}
+                        <div class="slider-novelties__sale">sale</div>
+                    {{/if}}
+                    <div class="slider-novelties__img-container">
+                        <img src="{{img}}" alt="" class="slider-novelties__img">
+                    </div>
+                    <div class="slider-novelties__content js-slider-content">
+                        <h3 class="slider-novelties__title js-slider-title">{{title}}</h3>
+                        <p class="slider-novelties__brand">{{brand}}</p>
+                        <p class="slider-novelties__type">{{type}}</p>
+                        <p class="slider-novelties__whom">{{whom}}</p>
+
+                        <div class="slider-novelties__prices">
+                            {{#if isSale}}
+                                <span class="slider-novelties__old-price">{{oldPrice}}</span>
+                            {{/if}}
+                            <span class="slider-novelties__new-price">{{newPrice}}</span>
+                        </div>
+                    </div>
+                </a>
+            {{/each}}
+        </div>
+    </div>
+</div>

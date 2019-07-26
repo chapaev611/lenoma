@@ -1,0 +1,52 @@
+@mixin clearfix {
+    &::after {
+        content: '';
+        display: table !important;
+        clear: both;
+        height: 0 !important;
+        visibility: hidden;
+    }
+}
+
+@mixin mq($from, $to: false) {
+    @if $to {
+        @media (min-width: $from + 0px) and (max-width: $to + 0px) {
+            @content;
+        }
+    } @else {
+        @media (max-width: $from + 0px) {
+            @content;
+        }
+    }
+}
+
+@mixin mqh($from, $to: false) {
+    @if $to {
+        @media (min-height: $from + 0px) and (max-height: $to + 0px) {
+            @content;
+        }
+    } @else {
+        @media (max-height: $from + 0px) {
+            @content;
+        }
+    }
+}
+
+@function fontSize($fs, $vw: 1920) {
+    @return #{$fs / $vw * 100}vw;
+}
+
+// Миксин для подключения шрифтов
+// пример использования:
+// @include fontface(Roboto, roboto-bold, 700)
+@mixin fontface($family, $filename: $family, $weight: normal, $style: normal, $display: swap) {
+    @font-face {
+        font-family: $family;
+        src: url('../assets/fonts/#{$filename}.eot') format('eot'),
+        url('../assets/fonts/#{$filename}.ttf') format('ttf'),
+        url('../assets/fonts/#{$filename}.woff') format('woff');
+        font-weight: $weight;
+        font-style: $style;
+        font-display: $display;
+    }
+}

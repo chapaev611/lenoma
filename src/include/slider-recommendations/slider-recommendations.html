@@ -1,0 +1,23 @@
+<div class="slider-recommendations js-slider-recommendations">
+    <div class="container">
+        <div class="slider-recommendations__recommendation recommendation-block">
+            <h3 class="recommendation-block__title">наши рекомандации</h3>
+            <nav class="recommendation-block__nav">
+                {{#each slider-recommendations.recommendation-block}}
+                    <p><a href="{{href}}" class="recommendation-block__link">{{linkName}}</a></p>
+                {{/each}}
+            </nav>
+        </div>
+
+        <div class="slider-recommendations__slider slider js-slider">
+            {{#each slider-recommendations.slides}}
+                <div class="slider__slide" style="background-image: url({{img}});">
+                    <h1 class="slider__title">{{title}}</h1>
+                    <div class="slider__container-btn">
+                        <a href="{{link}}" class="slider__link">подробнее</a>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</div>

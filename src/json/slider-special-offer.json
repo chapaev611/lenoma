@@ -1,0 +1,71 @@
+{
+    "title": "специальные предложения",
+    "slides": [
+        {
+            "isSale": false,
+            "link": "#",
+            "img": "./assets/img/slider4/1.png",
+            "title": "8 Always Pretty",
+            "brand": "EX Nihilo",
+            "type": "Парфюмированная вода",
+            "whom": "Женская",
+            "oldPrice": "",
+            "newPrice": "от 4 990 Р. —"
+        },
+        {
+            "isSale": false,
+            "link": "#",
+            "img": "./assets/img/slider4/2.png",
+            "title": "Fan di Fendi Extreme",
+            "brand": "EX Nihilo",
+            "type": "Парфюмированная вода",
+            "whom": "Женская",
+            "oldPrice": "",
+            "newPrice": "от 2 390 Р. —"
+        },
+        {
+            "isSale": false,
+            "link": "#",
+            "img": "./assets/img/slider4/3.png",
+            "title": "Tease Limited Edition Eau de Parfum",
+            "brand": "EX Nihilo",
+            "type": "Парфюмированная вода",
+            "whom": "Женская",
+            "oldPrice": "",
+            "newPrice": "от 3 910 Р. —"
+        },
+        {
+            "isSale": false,
+            "link": "#",
+            "img": "./assets/img/slider4/4.png",
+            "title": "001",
+            "brand": "EX Nihilo",
+            "type": "Парфюмированная вода",
+            "whom": "Женская",
+            "oldPrice": "",
+            "newPrice": "от 4 990 Р. —"
+        },
+        {
+            "isSale": false,
+            "link": "#",
+            "img": "./assets/img/slider4/2.png",
+            "title": "Fan di Fendi Extreme",
+            "brand": "EX Nihilo",
+            "type": "Парфюмированная вода",
+            "whom": "Женская",
+            "oldPrice": "",
+            "newPrice": "от 2 390 Р. —"
+        },
+        {
+            "isSale": false,
+            "link": "#",
+            "img": "./assets/img/slider4/3.png",
+            "title": "Tease Limited Edition Eau de Parfum",
+            "brand": "EX Nihilo",
+            "type": "Парфюмированная вода",
+            "whom": "Женская",
+            "oldPrice": "",
+            "newPrice": "от 3 910 Р. —"
+        }
+    ]
+}

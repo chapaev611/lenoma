@@ -1,0 +1,63 @@
+.button {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.47;
+    letter-spacing: 0.03em;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: box-shadow 250ms ease-in-out;
+
+    &:hover {
+        box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(122, 129, 132, 0.3);
+    }
+
+    &--transparent {
+        padding: 8px 32px;
+        border: 1px solid $color_blue;
+        color: $color_blue;
+
+        @include mq(767) {
+            padding: 10px 18px;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+    }
+
+    &--blue {
+        padding: 22px 108px;
+        font-size: 24px;
+        line-height: 26px;
+        color: white;
+        background: $color_blue_2;
+
+        @include mq(1279) {
+            padding: 22px 95px;
+        }
+
+        @include mq(1023) {
+            display: inline-block;
+            padding: 18px 78px;
+        }
+
+        @include mq(767) {
+            padding: 15px 78px;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 19.9px;
+        }
+
+    }
+
+    &--small {
+        padding: 17px 46px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 14px;
+    }
+
+
+}

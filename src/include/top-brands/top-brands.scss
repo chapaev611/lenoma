@@ -1,0 +1,110 @@
+.top-brands {
+    text-align: center;
+    font-family: $font_circle;
+
+    .title-block {
+        margin: 0 0 23px;
+    }
+
+    &__btn {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 24px;
+        font-variant: small-caps;
+        letter-spacing: 1.4px;
+        color: $color_brown;
+    }
+
+    &__preview {
+        padding: 14px 0 0;
+        text-align: left;
+    }
+
+    &__container-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 85px;
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 14px 0 0;
+
+        &:last-child, 
+        &:nth-of-type(6n) {
+            margin-right: 0;
+        }
+    }
+
+    &__hidden-preview {
+        display: none;
+    }
+
+
+    //slider
+    &__slider {
+        width: 83%;
+        margin: 0 auto 62px auto;
+        padding: 44px 0 0;
+        font-size: 0;
+    }
+
+    &__slide {
+        display: inline-block;
+        vertical-align: top;
+        width: 20%;
+        text-align: left;
+    }
+
+    &__list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0 20px 0 0;
+    }
+
+    &__item {
+        margin: 0 0 20px;
+    }
+
+    &__link {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1;
+        letter-spacing: 0.4px;
+        color: $color_black;
+    }
+
+    .slick-next, .slick-prev {
+        top: 54%;
+        width: 19px;
+        height: 32px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        transition: all .4s ease-in-out;
+
+        &:before {
+            display: none;
+        }
+    }
+
+    .slick-slide img {
+        display: inline-block;
+    }
+
+    .slick-prev {
+        left: -130px;
+        background: url('../assets/img/slider2/left-active.png');
+
+        &.slick-disabled {
+            background: url('../assets/img/slider2/left.png');
+        }
+    }
+
+    .slick-next {
+        right: -130px;
+        background: url('../assets/img/slider2/right-active.png');
+
+        &.slick-disabled {
+            background: url('../assets/img/slider2/right.png');
+        }
+    }
+}

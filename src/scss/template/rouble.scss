@@ -1,0 +1,24 @@
+.rb {
+    display: inline-block;
+
+    &::after {
+        content: '₽';
+        color: transparent;
+        background-image: url('../assets/img/rouble.svg');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    &--white {
+        &::after {
+            background-image: url(../assets/img/rouble-white.svg);
+        }
+    }
+
+    &--blue {
+        &::after {
+            background-image: url(../assets/img/rouble-blue.svg);
+        }
+    }
+}

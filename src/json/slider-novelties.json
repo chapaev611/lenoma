@@ -1,0 +1,71 @@
+{
+    "title": "новинки",
+    "slides": [
+        {
+            "isSale": false,
+            "link": "#",
+            "img": "./assets/img/slider3/1.png",
+            "title": "Aigner Black",
+            "brand": "EX Nihilo",
+            "type": "Парфюмированная вода",
+            "whom": "Женская",
+            "oldPrice": "",
+            "newPrice": "от 6 780  Р. —"
+        },
+        {
+            "isSale": false,
+            "link": "#",
+            "img": "./assets/img/slider3/2.png",
+            "title": "Aigner Black Icedrops",
+            "brand": "EX Nihilo",
+            "type": "Парфюмированная вода",
+            "whom": "Женская",
+            "oldPrice": "",
+            "newPrice": "от 2 990 Р. —"
+        },
+        {
+            "isSale": false,
+            "link": "#",
+            "img": "./assets/img/slider3/3.png",
+            "title": "Fleur Narcotique",
+            "brand": "EX Nihilo",
+            "type": "Парфюмированная вода",
+            "whom": "Женская",
+            "oldPrice": "",
+            "newPrice": "от 4 990 Р. —"
+        },
+        {
+            "isSale": false,
+            "link": "#",
+            "img": "./assets/img/slider3/4.png",
+            "title": "Aire Loco",
+            "brand": "EX Nihilo",
+            "type": "Парфюмированная вода",
+            "whom": "Женская",
+            "oldPrice": "",
+            "newPrice": "от 3 910 Р. —"
+        },
+        {
+            "isSale": false,
+            "link": "#",
+            "img": "./assets/img/slider3/2.png",
+            "title": "Aigner Black Icedrops",
+            "brand": "EX Nihilo",
+            "type": "Парфюмированная вода",
+            "whom": "Женская",
+            "oldPrice": "",
+            "newPrice": "от 2 990 Р. —"
+        },
+        {
+            "isSale": false,
+            "link": "#",
+            "img": "./assets/img/slider3/3.png",
+            "title": "Fleur Narcotique",
+            "brand": "EX Nihilo",
+            "type": "Парфюмированная вода",
+            "whom": "Женская",
+            "oldPrice": "",
+            "newPrice": "от 4 990 Р. —"
+        }
+    ]
+}
